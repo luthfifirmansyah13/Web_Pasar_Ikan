@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keranjang Saya - Ruang Ikan</title>
+    <link rel="stylesheet" href="../assets/css/cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <div class="social-icons">
+                <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="nav-icons">
+                <a href="#"><i class="fas fa-heart"></i></a>
+                <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                <a href="#"><i class="fas fa-user"></i></a>
+            </div>
+        </div>
+        <div class="nav-menu">
+            <a href="../pages/home.html">Home</a>
+            <a href="../pages/shop.html">Shop</a>
+            <a href="../pages/about.html">About Us</a>
+            <a href="../pages/blog.html">Blog</a>
+            <a href="../pages/contact.html">Contact Us</a>
+        </div>
+    </nav>
+
+    <main class="cart-page">
+        <div class="cart-header">
+            <h1>Keranjang Saya</h1>
+            <button class="back-btn" onclick="window.location.href='../pages/shop.html'">
+                <i class="fas fa-arrow-left"></i>
+            </button>
+        </div>
+
+        <div class="cart-container">
+            <div class="cart-items">
+                <div class="cart-labels">
+                    <span>Produk</span>
+                    <span>Harga</span>
+                    <span>Jumlah</span>
+                </div>
+
+                <!-- Cart Item 1 -->
+                <div class="cart-item">
+                    <div class="item-checkbox">
+                        <input type="checkbox" checked>
+                    </div>
+                    <div class="item-details">
+                        <img src="../assets/images/salmon.jpeg" alt="Salmon">
+                        <div class="item-info">
+                            <h3>Salmon</h3>
+                            <span class="weight">500g</span>
+                            <span class="stock">Stock: 4</span>
+                        </div>
+                    </div>
+                    <div class="item-price">Rp.80.000</div>
+                    <div class="item-quantity">
+                        <button class="qty-btn minus"><i class="fas fa-minus"></i></button>
+                        <span>2</span>
+                        <button class="qty-btn plus"><i class="fas fa-plus"></i></button>
+                    </div>
+                </div>
+
+                <!-- Cart Item 2 -->
+                <div class="cart-item">
+                    <div class="item-checkbox">
+                        <input type="checkbox" checked>
+                    </div>
+                    <div class="item-details">
+                        <img src="../assets/images/tuna.png" alt="Tuna">
+                        <div class="item-info">
+                            <h3>Tuna</h3>
+                            <span class="weight">500g</span>
+                            <span class="stock">Stock: 6</span>
+                        </div>
+                    </div>
+                    <div class="item-price">Rp.60.000</div>
+                    <div class="item-quantity">
+                        <button class="qty-btn minus"><i class="fas fa-minus"></i></button>
+                        <span>2</span>
+                        <button class="qty-btn plus"><i class="fas fa-plus"></i></button>
+                    </div>
+                </div>
+
+                <!-- Cart Item 3 -->
+                <div class="cart-item">
+                    <div class="item-checkbox">
+                        <input type="checkbox" checked>
+                    </div>
+                    <div class="item-details">
+                        <img src="../assets/images/tuna.png" alt="Kakap Putih">
+                        <div class="item-info">
+                            <h3>Tuna</h3>
+                            <span class="weight">500g</span>
+                            <span class="stock">Stock: 3</span>
+                        </div>
+                    </div>
+                    <div class="item-price">Rp.60.000</div>
+                    <div class="item-quantity">
+                        <button class="qty-btn minus"><i class="fas fa-minus"></i></button>
+                        <span>1</span>
+                        <button class="qty-btn plus"><i class="fas fa-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cart-summary">
+                <div class="summary-item">
+                    <span>Subtotal Produk</span>
+                    <span>Rp.310.000</span>
+                </div>
+                <div class="summary-item">
+                    <span>Subtotal Pengiriman</span>
+                    <span>Rp.20.000</span>
+                </div>
+                <div class="summary-total">
+                    <span>Total Pembayaran</span>
+                    <span>Rp.330.000</span>
+                </div>
+                <button class="checkout-btn">Buat Pesanan</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="../assets/js/cart.js"></script>
+</body>
+</html>

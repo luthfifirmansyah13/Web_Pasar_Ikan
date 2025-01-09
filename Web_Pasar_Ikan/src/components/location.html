@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location - Ruang Ikan</title>
+    <link rel="stylesheet" href="css/location.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <<nav class="navbar">
+        <div class="nav-brand">
+            <div class="social-icons">
+                <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="nav-icons">
+                <a href="#"><i class="fas fa-heart"></i></a>
+                <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                <a href="#"><i class="fas fa-user"></i></a>
+            </div>
+        </div>
+        <div class="nav-menu">
+            <a href="../pages/home.html">Home</a>
+            <a href="../pages/shop.html">Shop</a>
+            <a href="../pages/about.html">About Us</a>
+            <a href="../pages/blog.html">Blog</a>
+            <a href="../pages/contact.html">Contact Us</a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="breadcrumb">
+            <a href="home.html">Home</a>
+            <span>/</span>
+            <span>Location</span>
+        </div>
+
+        <section class="location-section">
+            <h1>Our Location</h1>
+            
+            <div class="location-container">
+                <div class="map-container">
+                    <div id="map"></div>
+                    <button class="back-btn" onclick="window.history.back()">
+                        <i class="fas fa-arrow-left"></i>
+                    </button>
+                </div>
+                
+                <div class="location-info">
+                    <h2>Balong Hardi Sumedang</h2>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Jl. Pasarean, Balong Hardi, Sumedang, Jawa Barat</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <p>Open Daily: 7:00 AM - 5:00 PM</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+62 812-3456-7890</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>info@ruangikan.com</p>
+                    </div>
+                    <a href="https://maps.google.com/?q=Balong+Hardi+Sumedang" target="_blank" class="directions-btn">
+                        Get Directions
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+    <script src="js/location.js"></script>
+</body>
+</html>

@@ -1,0 +1,267 @@
+:root {
+    --primary-color: #0066B2;
+    --secondary-color: #E8F1F8;
+    --white: #ffffff;
+    --gray: #f5f5f5;
+    --dark-gray: #333333;
+    --text-gray: #666666;
+    --border-color: #e0e0e0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: var(--gray);
+    min-height: 100vh;
+}
+
+.checkout-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: var(--white);
+    min-height: 100vh;
+}
+
+/* Header Styles */
+.checkout-header {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.checkout-header h1 {
+    font-size: 1.5rem;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    color: var(--white);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Main Content Styles */
+.checkout-content {
+    padding: 2rem;
+}
+
+/* Section Styles */
+section {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+section h2 {
+    font-size: 1.2rem;
+    color: var(--dark-gray);
+    margin-bottom: 1rem;
+}
+
+/* Address Section */
+.address-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.customer-name {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.customer-address {
+    color: var(--text-gray);
+    line-height: 1.4;
+}
+
+.address-actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+/* Store Section */
+.store-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.store-info h3 {
+    color: var(--dark-gray);
+}
+
+/* Product List */
+.product-item {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.product-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.product-details {
+    flex: 1;
+}
+
+.product-details h4 {
+    margin-bottom: 0.5rem;
+    color: var(--dark-gray);
+}
+
+.price {
+    color: var(--primary-color);
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+}
+
+.quantity {
+    color: var(--text-gray);
+    margin-bottom: 0.25rem;
+}
+
+.subtotal {
+    font-weight: bold;
+    color: var(--dark-gray);
+}
+
+/* Order Notes */
+.order-notes {
+    margin-top: 1rem;
+}
+
+.order-notes label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--dark-gray);
+}
+
+.order-notes input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+}
+
+/* Payment Method */
+.payment-options {
+    display: flex;
+    gap: 1rem;
+}
+
+.payment-btn {
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    background: var(--white);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.payment-btn.active {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border-color: var(--primary-color);
+}
+
+/* Order Summary */
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    color: var(--text-gray);
+}
+
+.summary-item.total {
+    font-weight: bold;
+    color: var(--dark-gray);
+    font-size: 1.1rem;
+    margin-top: 1rem;
+}
+
+/* Buttons */
+.btn-primary,
+.btn-secondary {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.btn-secondary {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.btn-chat {
+    padding: 0.25rem 0.5rem;
+    background-color: var(--secondary-color);
+    color: var(--text-gray);
+    border: none;
+    border-radius: 3px;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.btn-order {
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-order:hover {
+    background-color: #005091;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .checkout-content {
+        padding: 1rem;
+    }
+
+    .address-info {
+        flex-direction: column;
+    }
+
+    .address-actions {
+        margin-top: 1rem;
+    }
+
+    .payment-options {
+        flex-wrap: wrap;
+    }
+
+    .payment-btn {
+        flex: 1;
+        min-width: 120px;
+        text-align: center;
+    }
+}

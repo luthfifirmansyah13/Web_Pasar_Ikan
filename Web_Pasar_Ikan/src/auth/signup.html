@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruang Ikan - Sign Up</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <a href="../../index.html" class="back-button">
+                <svg width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" fill="#fff"/>
+                </svg>
+            </a>
+            <div class="fish-logo">
+                <img src="../assets/images/logo.png" alt="Fish Logo">
+            </div>
+        </div>
+        <div class="right-panel">
+            <div class="login-container">
+                <div class="logo-small">
+                    <img src="../assets/images/logo.png" alt="Fish Icon">
+                    <span>Ruang Ikan</span>
+                </div>
+                <h1>Sign Up</h1>
+                <p class="subtitle">Please fill your detail to create your account</p>
+                
+                <form action="verify-code.html" method="GET">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Full Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" id="password" name="password" placeholder="Password" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm Password" required>
+                    </div>
+                    
+                    <button type="submit" class="signup-btn">Sign Up</button>
+                    
+                    <div class="divider">
+                        <span>or</span>
+                    </div>
+                    
+                    <button type="button" class="google-btn" onclick="window.location.href='verify-code.html'">
+                        <img src="../assets/images/google-icon.svg" alt="Google">
+                        Sign Up with Google
+                    </button>
+                </form>
+                
+                <div class="signin-prompt">
+                    <p>Already have an account? <a href="../../index.html">Sign In</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Ruang Ikan</title>
+    <link rel="stylesheet" href="../css/checkout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="checkout-container">
+        <header class="checkout-header">
+            <h1>Ruang Ikan Checkout</h1>
+            <button class="close-btn"><i class="fas fa-times"></i></button>
+        </header>
+
+        <main class="checkout-content">
+            <section class="shipping-address">
+                <h2>Alamat Pengirim</h2>
+                <div class="address-info">
+                    <div class="customer-details">
+                        <p class="customer-name">Jeri Jeriani (+62) 082243652231</p>
+                        <p class="customer-address">Jl. Mayor Abdurahman 02/04 Sumedang Jawa Barat 4321</p>
+                    </div>
+                    <div class="address-actions">
+                        <button class="btn-primary">Utama</button>
+                        <button class="btn-secondary">Ubah</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="order-details">
+                <h2>Produk Dipesan</h2>
+                <div class="store-info">
+                    <h3>Taurus12Store</h3>
+                    <button class="btn-chat">Chat Sekarang</button>
+                </div>
+
+                <div class="product-list">
+                    <div class="product-item">
+                        <img src="images/bandeng.jpg" alt="Ikan Bandeng" class="product-image">
+                        <div class="product-details">
+                            <h4>Ikan Bandeng Per KG</h4>
+                            <p class="price">Rp. 40.000</p>
+                            <p class="quantity">2</p>
+                            <p class="subtotal">Rp. 80.000</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="order-notes">
+                    <label for="notes">Pesan :</label>
+                    <input type="text" id="notes" placeholder="Catatan untuk penjual">
+                </div>
+            </section>
+
+            <section class="payment-method">
+                <h2>Metode Pembayaran :</h2>
+                <div class="payment-options">
+                    <button class="payment-btn active">Cod</button>
+                    <button class="payment-btn">Transfer</button>
+                    <button class="payment-btn">Mitra/Agen</button>
+                </div>
+            </section>
+
+            <section class="order-summary">
+                <div class="summary-item">
+                    <span>Subtotal Produk</span>
+                    <span>Rp.80.000</span>
+                </div>
+                <div class="summary-item">
+                    <span>Subtotal Pengiriman</span>
+                    <span>Rp.20.000</span>
+                </div>
+                <div class="summary-item total">
+                    <span>Total Pembayaran</span>
+                    <span>Rp.100.000</span>
+                </div>
+            </section>
+
+            <button class="btn-order">Buat Pesanan</button>
+        </main>
+    </div>
+
+    <script src="../assets/js/checkout.js"></script>
+</body>
+</html>

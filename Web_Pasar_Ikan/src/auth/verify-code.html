@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruang Ikan - Verify Code</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <a href="forgot-password.html" class="back-button">
+                <svg width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" fill="#fff"/>
+                </svg>
+            </a>
+            <div class="fish-logo">
+                <img src="../assets/images/logo.png" alt="Fish Logo">
+            </div>
+        </div>
+        <div class="right-panel">
+            <div class="login-container">
+                <div class="logo-small">
+                    <img src="../assets/images/logo.png" alt="Fish Icon">
+                    <span>Ruang Ikan</span>
+                </div>
+                <h1>Verify Code</h1>
+                <p class="subtitle">Please enter the code we just sent to email<br><span class="user-email">example@mail.com</span></p>
+                
+                <form id="verifyCodeForm">
+                    <div class="verification-code">
+                        <input type="text" maxlength="1" pattern="[0-9]" inputmode="numeric" required>
+                        <input type="text" maxlength="1" pattern="[0-9]" inputmode="numeric" required>
+                        <input type="text" maxlength="1" pattern="[0-9]" inputmode="numeric" required>
+                        <input type="text" maxlength="1" pattern="[0-9]" inputmode="numeric" required>
+                        <input type="text" maxlength="1" pattern="[0-9]" inputmode="numeric" required>
+                        <input type="text" maxlength="1" pattern="[0-9]" inputmode="numeric" required>
+                    </div>
+                    
+                    <button type="submit" class="sign-in-btn">Verify</button>
+                    
+                    <p class="resend-prompt">
+                        Didn't receive code? <a href="#" class="resend-link" id="resendCode">Resent Code</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>

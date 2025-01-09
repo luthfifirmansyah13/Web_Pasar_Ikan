@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Toko - Ruang Ikan</title>
+    <link rel="stylesheet" href="../css/chat.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <h1>Chat Toko</h1>
+            <button class="back-btn" onclick="window.history.back()">
+                <i class="fas fa-arrow-left"></i>
+            </button>
+        </div>
+
+        <div class="chat-messages" id="chatMessages">
+            <!-- Messages will be dynamically added here -->
+        </div>
+
+        <div class="chat-input">
+            <button class="attachment-btn">
+                <i class="fas fa-plus"></i>
+            </button>
+            <div class="input-wrapper">
+                <input type="text" placeholder="Masukan Teks" id="messageInput">
+                <button class="send-btn" id="sendButton">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Attachment Modal -->
+    <div class="attachment-modal" id="attachmentModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Add Attachment</h3>
+                <button class="close-btn">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="attachment-options">
+                <button class="attachment-option">
+                    <i class="fas fa-image"></i>
+                    <span>Image</span>
+                </button>
+                <button class="attachment-option">
+                    <i class="fas fa-camera"></i>
+                    <span>Camera</span>
+                </button>
+                <button class="attachment-option">
+                    <i class="fas fa-file"></i>
+                    <span>Document</span>
+                </button>
+                <button class="attachment-option">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Location</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../assets/js/chat.js"></script>
+</body>
+</html>
